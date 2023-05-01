@@ -1,6 +1,6 @@
 # vlc video transcoder
 
-Simple video transcoder written in python using vlc
+Simple video transcoder written in python using vlc.
 
 Supported operations:
 
@@ -9,3 +9,8 @@ Supported operations:
 - Calculate matrix determinant
 - Calculate reversal matrix
 - Calculate matrix rank
+
+Require customtkinter
+```
+pip install customtkinter
+```
