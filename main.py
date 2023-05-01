@@ -216,13 +216,12 @@ scaleLabel.grid(row=0,column=5)
 
 def choose_scale(scaleInput):
     scale=scaleInput.get()
+    if not re.match(r"^\d*\.?\d*$", scale):
+        return
     if scale=="":
         options.pop('scale')
     else:
-        try:
             options['scale']=scale
-        except ValueError:
-            print('float required')
     showCurrentOptions()
 
 
